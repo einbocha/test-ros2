@@ -1,0 +1,14 @@
+# Generated
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IntelliJ (IDE)
+.idea
+*.iml
+
+# ROS2
+build/
+install/
+log/
