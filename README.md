@@ -24,16 +24,6 @@ ROS 2 Humble Hawksbill was chosen, because it was [RoboStack](https://robostack.
 ### Raspberry Pi
 
 
-## Tips & Tricks
-### ROS2
-To create a new python package <pkg_name> with a node <node_name>, run:
-
-(Inside the conda environment, of course)
-~~~
-ros2 pkg create --build-type ament_python <pkg_name> --node-name <node_name>
-~~~
-
-
 ## Run code
 Note: For some unknown reason, do the terminals don't share the same ros2 thingy such that nodes running 
 in different terminals cannot talk to each other let alone `rqt_graph` or `ros2 node list` cannot see them.
@@ -52,3 +42,18 @@ Shown below is how to run a node from pkg **pubsub**.
 Inside the ros2 workspace directory **test-ros2**, run: `./build.sh talker` (to run e.g. the talker node)
 
 Note: If the script fails, try running `chmod +x build.sh` first.
+
+## Tips & Tricks
+To create a new python package <pkg_name> with a node <node_name>, run:
+
+(Inside the conda environment, of course)
+~~~
+ros2 pkg create --build-type ament_python <pkg_name> --node-name <node_name>
+~~~
+
+## Resources
+- [RoboStack](https://robostack.github.io)
+- [Gazebo](https://gazebosim.org/docs/latest/getstarted/)
+- [Conda Forge](https://conda-forge.org)
+- [ROS2 Tutorial](https://www.youtube.com/playlist?list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy)
+- [ROS2](https://www.ros.org)
