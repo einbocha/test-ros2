@@ -35,6 +35,9 @@ ros2 pkg create --build-type ament_python <pkg_name> --node-name <node_name>
 
 
 ## Run code
+Note: For some unknown reason, do the terminals don't share the same ros2 thingy such that nodes running 
+in different terminals cannot talk to each other let alone `rqt_graph` or `ros2 node list` cannot see them.
+
 ### Manual
 Shown below is how to run the **talker** node from pkg **pubsub** example.
 
@@ -44,8 +47,8 @@ Inside the ros2 workspace directory **test-ros2**, run:
 3. `ros2 run pubsub talker`
 
 ### Automatic
-Shown below is how to run the **talker** node from pkg **pubsub** example.
+Shown below is how to run a node from pkg **pubsub**.
 
-Inside the ros2 workspace directory **test-ros2**, run: `./run.sh`
+Inside the ros2 workspace directory **test-ros2**, run: `./build.sh talker` (to run e.g. the talker node)
 
-Note: If the script fails, try running `chmod +x run.sh` first.
+Note: If the script fails, try running `chmod +x build.sh` first.

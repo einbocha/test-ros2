@@ -1,4 +1,3 @@
 colcon build --packages-select pubsub
 source ./install/setup.sh
-ros2 run pubsub talker
-ros2 run pubsub listener
+ros2 run pubsub "$1"
